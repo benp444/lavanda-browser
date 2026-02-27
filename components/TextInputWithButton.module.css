@@ -1,0 +1,103 @@
+.input-container {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.input-container input {
+  height: 32px;
+  padding: 4px;
+  background-color: white;
+  /* text field background */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-container button {
+  height: 32px;
+  background-color: blue;
+  /* button background */
+  color: white;
+  /* button text color */
+  border: none;
+  border-radius: 4px;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: darkblue;
+  /* optional hover effect */
+}
+
+.tableContainer {
+  margin-top: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  display: inline-block;
+
+
+}
+
+.dataTable {
+  width: auto;
+  table-layout: auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.dataTable th,
+.dataTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.dataTable th {
+  background-color: #f5f5f5;
+  font-weight: 600;
+}
+
+.dataTable tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.dataTable thead th {
+  position: sticky;
+  top: 0;
+  background: rgb(197, 206, 214);
+  /* important so text doesn't overlap rows */
+  z-index: 2;
+  /* keeps it above table rows */
+}
+
+.centerPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonStack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bigButton {
+  font-size: 1.5rem;
+  padding: 20px 40px;
+  min-width: 250px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #0070f3;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.bigButton:hover {
+  background-color: #0059c1;
+}
