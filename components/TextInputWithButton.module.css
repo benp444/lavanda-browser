@@ -80,6 +80,12 @@
   align-items: center;
 }
 
+.justifyCenter {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
 .buttonStack {
   display: flex;
   flex-direction: column;

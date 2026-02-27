@@ -1,4 +1,6 @@
-import styles from "@/components/creative.module.css";
+//import styles from "@/components/creative.module.css";
+import styles from "@/components/TextInputWithButton.module.css";
+
 import WorkspaceManager from "@/components/WorkspaceManager";
 
 
@@ -11,15 +13,16 @@ export default async function UsersPage() {
         <>
             <WorkspaceManager />
 
-            <Link href="/">
-                <button className={styles["homeButton"]}>
-                    Go to Home
-                </button>
-            </Link>
+            <div className={styles.justifyCenter} >
+                <Link href="/">
+                    <button className={styles.bigButton}>
+                        Go to Home
+                    </button>
+                </Link>
+            </div>
         </>
     );
 }
-
 
 
 
