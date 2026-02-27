@@ -18,7 +18,7 @@ type ProductGroupNode = {
     contractEarliestEndDate: string;
     contractEarliestStartDate: string;
     products?: { totalCount: string };
-
+    agreement?: { agreementType: string };
 };
 
 type ProductNode = {
@@ -106,9 +106,8 @@ export default function WorkspaceManager() {
                     { header: "Start Date", render: (ws) => ws.contractEarliestStartDate },
                     { header: "End Date", render: (ws) => ws.contractEarliestEndDate },
                     { header: "Products", render: (ws) => ws.products?.totalCount },
+                    { header: "Agreement Type", render: (ws) => ws.agreement?.agreementType ?? "DIRECT LET" },
 
-
-                    // { header: "Workspace ID", render: (ws) => ws.workspace?.id },
                 ]}
                 onSelect={setSelectedPg}
             />
